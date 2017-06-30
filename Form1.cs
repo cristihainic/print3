@@ -43,5 +43,17 @@ namespace print3
             AdaugareMedic adaugMedic = new AdaugareMedic();
             adaugMedic.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Programare consultatie = new Programare();
+            consultatie.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Raportare raport = new Raportare();
+            raport.ShowDialog();
+        }
     }
 }

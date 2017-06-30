@@ -24,7 +24,7 @@ namespace print3
         {
             string nume = textBox1.Text;
             string orar = textBox2.Text;
-            MySqlCommand insertDoctor = new MySqlCommand();
+            MySqlCommand insertDoctor = conn.CreateCommand();
             insertDoctor.CommandText = $"INSERT INTO medici (nume, orar) VALUES ('{nume}', '{orar}')";
             insertDoctor.ExecuteReader();
             MessageBox.Show("Adaugat!");
